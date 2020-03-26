@@ -73,7 +73,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 dom.querySelector('.q-thirteen').classList.add('hidden')
                 dom.querySelector('.results-wrapper').classList.remove('hidden')
 
-                dom.querySelector('.white-h').innerHTML = 'Hooray!';
+                dom.querySelector('.white-h').style.display = 'none'
                 dom.querySelector('.hooray').classList.remove('hidden')
                 dom.querySelector('#procceed').style.display = 'none'
                 calculate()
@@ -255,7 +255,12 @@ const calculate = () => {
     dom.querySelector('.colored-h').style.display = 'none'
     //@Rolls
     dom.querySelector('#rolls-stored').innerHTML = toiletPaperTobeStored;
-    dom.querySelector('#rolls-days').innerHTML = Math.trunc(estimateToiletPaperNeed);
+    if (Math.trunc(estimateToiletPaperNeed) == 'Infinity' || estimateToiletPaperNeed == 'Infinity' ) {
+        dom.querySelector('#rolls-days').innerHTML = '0'
+    } else {
+        dom.querySelector('#rolls-days').innerHTML = Math.trunc(estimateToiletPaperNeed);
+
+    }
 
     //@Water
     dom.querySelector('#water-stored').innerHTML = waterStore;
