@@ -228,9 +228,9 @@ dom.querySelector('#restart').addEventListener('click', () => {
 
 
 const animateEl = () => {
-    TweenMax.from('.quiz-img', .3, { y: 30, opacity: 0, delay: .1 });
-    TweenMax.from('.quiz-title', .3, { y: 30, opacity: 0 , delay: .2});
-    TweenMax.from('.options', .4, { y: 20, opacity: 0, delay: .1 });
+    TweenMax.from('.quiz-img', .3, { y: 30, opacity: 0, delay: .3 });
+    TweenMax.from('.quiz-title', .3, { y: 30, opacity: 0 , delay: .4});
+    TweenMax.from('.options', .4, { y: 20, opacity: 0, delay: .3 });
 }
 
 
