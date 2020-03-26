@@ -1,0 +1,18 @@
+<svg width="133" height="108" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="110" width="135" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <ellipse stroke="#fff" ry="50.5" rx="58.5" id="svg_6" cy="54.25" cx="65.25" stroke-opacity="null" stroke-width="2.5" fill="none"/>
+  <text stroke="#fff" transform="rotate(-25.80975914001465 26.162620544433615,53.955661773681655) matrix(1.851853040182004,0,0,1.337650388796878,-24.965883524382146,-3.929069427926414) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_8" y="51.848752" x="18.938185" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#fff">N</text>
+  <text stroke="#fff" transform="matrix(1.499512195587158,0,0,1,-32.47609759122133,-3) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_9" y="51.453125" x="49" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#fff">E</text>
+  <text stroke="#fff" transform="matrix(1.2962963139569297,0,0,1.3033033827761642,-21.000001112619884,-6.101399862227075) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_10" y="48.824092" x="67.6" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#fff">X</text>
+  <text stroke="#fff" transform="matrix(1.8666666746139524,0,0,1.1111111640930176,-90.60000085830688,0.3940940722823143) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_11" y="54.453125" x="93" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#fff">T</text>
+ </g>
+</svg>

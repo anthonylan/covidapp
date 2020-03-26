@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandemic Buying</title>
+    <link rel="stylesheet" href="/assets/css/index.css">
+</head>
+<body>
+    
+    <div id="app">
+        <div class="split-app">
+            <div class="left-split">
+                <div class="inner-wrap">
+                    <div class="header colored-h">Question <span id="current-quiz">1</span> <span id="procceed">/13</span> </div>
+                    <div class="content">
+                        <img class="quiz-img" src="/assets/img/boy.svg">
+                        <h1 class="quiz-title">What is your gender?</h1>
+                    </div>
+                    <div class="results-wrapper hidden">
+                        <h3>estimate</h3>
+                        <p>Toilet Rolls you wish to store: <strong id="rolls-stored"></strong> that will last <strong id="rolls-days"></strong> days </p>
+                        <p>Bottle of water you wish to store: <strong id="water-stored"></strong> that will last you <strong id="water-days"></strong> days</p>
+
+                
+                        <div class="social-sharing">
+                            <h4>share you result</h4>
+                            <div class="links">
+                                <a href="#" class="tweet fab fa-twitter"></a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=anthonylan.com" class="fab fa-facebook-f" target="_blank"></a>
+                            </div>
+                        </div>
+                        <a href="#" id="restart" class="btn">Retake it</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right-split">
+                <div class="inner-wrap">
+                    <div class="header white-h"> Select Option Below </div>
+
+                    <img src="/assets/img/hty.svg" class="hooray hidden">
+                    <div class="options q-one">
+                        <div class="q-opt">
+                            <label>A</label> <span>Male</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>b</label> <span>female</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>c</label> <span>prefer not to say</span>
+                        </div>
+                    </div>
+
+                    <!-- Quiz Second -->
+                    <div class="options q-two hidden">
+                        <div class="q-opt">
+                            <label>A</label> <span>Under 18</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>b</label> <span>18-25</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>c</label> <span>26-35</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>d</label> <span>36-45</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>e</label> <span>over 45</span>
+                        </div>
+                    </div>
+
+                    <!-- Quiz Third -->
+                    <div class="options q-three hidden">
+                        <div class="q-opt">
+                            <label>A</label> <span>urban (city) suburban</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>b</label> <span>rural (farm/country)</span>
+                        </div>
+                    </div>
+                    <!-- Quiz Four -->
+                    <div class="options q-four hidden">
+                        <div class="q-opt">
+                            <label>A</label> <span>Very healthy</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>b</label> <span>not healthy</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>c</label> <span>moderately healthy</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>d</label> <span>Very Ill</span>
+                        </div>
+                    </div>
+
+                     <!-- Quiz Five -->
+                     <div class="options q-five hidden">
+                        <input type="text" id="adults" placeholder="Enter number here" required>
+                        <a href="#" class="btn" id="to-six">next</a>
+                    </div>
+
+                     <!-- Quiz Six -->
+                     <div class="options q-six hidden">
+                        <input type="text" id="child" placeholder="Enter number here" required>
+                        <a href="#" class="btn" id="to-seven">next</a>
+                    </div>
+
+                      <!-- Quiz Seven -->
+                      <div class="options q-seven hidden">
+                        <input type="text" id="toilet" placeholder="Enter number here" required>
+                        <a href="#" class="btn" id="to-eight">next</a>
+                    </div>
+
+                      <!-- Quiz Eight -->
+                      <div class="options q-eight hidden">
+                        <input type="text" id="mealseat" placeholder="Enter number here" required>
+                        <a href="#" class="btn" id="to-nine">next</a>
+                    </div>
+
+                      <!-- Quiz Nine -->
+                      <div class="options q-nine hidden">
+                        <input type="text" id="waterdrink" placeholder="Enter number here" required>
+                        <a href="#" class="btn" id="to-ten">next</a>
+                    </div>
+
+                      <!-- Quiz Ten -->
+                      <div class="options q-ten hidden">
+                        <input type="text" id="weeksfood" placeholder="Enter number here" required>
+                        <a href="#" class="btn" id="to-eleven">next</a>
+                    </div>
+
+                      <!-- Quiz Eleven -->
+                      <div class="options q-eleven hidden">
+                        <input type="text" id="weekswater" placeholder="Enter number here" required>
+                        <a href="#" class="btn" id="to-twelve">next</a>
+                    </div>
+
+                      <!-- Quiz Twelve -->
+                      <div class="options q-twelve hidden">
+                        <input type="text" id="weekspaper" placeholder="Enter number here" required>
+                        <a href="#" class="btn" id="to-thirteen">next</a>
+                    </div>
+
+                     <!-- Quiz Thirteen/Last -->
+                     <div class="options q-thirteen hidden">
+                        <div class="q-opt">
+                            <label>A</label> <span>Gun</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>b</label> <span>Knife</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>c</label> <span>crossbow</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>d</label> <span>axe</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>e</label> <span>other</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  
+
+
+    <!-- Values -->
+    <div id="opt-one" class="hidden"></div>
+    <div id="opt-two" class="hidden"></div>
+    <div id="opt-three" class="hidden"></div>
+    <div id="opt-four" class="hidden"></div>
+    <div id="opt-five" class="hidden"></div>
+    <div id="opt-six" class="hidden"></div>
+    <div id="opt-seven" class="hidden"></div>
+    <div id="opt-eight" class="hidden"></div>
+    <div id="opt-nine" class="hidden"></div>
+    <div id="opt-ten" class="hidden"></div>
+    <div id="opt-eleven" class="hidden"></div>
+    <div id="opt-twelve" class="hidden"></div>
+    <div id="opt-thirteen" class="hidden"></div>
+
+
+
+
+
+    <script src="dist/main.js"></script>
+</body>
+</html>
