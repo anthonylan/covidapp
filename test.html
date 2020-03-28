@@ -1,0 +1,196 @@
+
+    <div id="app">
+        <div class="split-app">
+            <div class="left-split">
+                <div class="inner-wrap">
+                    <div class="header colored-h">Question <span id="current-quiz">1</span> <span id="procceed">/13</span> </div>
+                    <div class="content hidden">
+                        <img class="quiz-img" src="/assets/img/boy.svg">
+                        <h1 class="quiz-title">What is your gender?</h1>
+                    </div>
+                    <div class="results-wrapper hidde">
+                        <h3>estimate</h3>
+                        <h2>Toilet Paper & Water</h2>
+                        <p>Toilet Rolls you wish to store: <strong id="rolls-stored"></strong> that will last <strong id="rolls-days"></strong> days </p>
+                        <p>Bottle of water you wish to store: <strong id="water-stored"></strong> that will last you <strong id="water-days"></strong> days</p>
+
+                        <div class="supply">
+                            <h2>Food Storage supply</h2>
+                            <p>Select the amount of time you'd like to use to calculate for your food storage supply  (2 weeks, 1 month, 2 months, 3 months, 6 months, or 1-year Food Supply)</p>
+
+                           <input type="text" id="weeks-calc" placeholder="Enter the number of weeks supply">
+                           <button type="button" id="calc">calculate</button>
+
+                            <h3>See All Results Below</h3>
+                           
+                            <div class="fs-result">
+                                <div class="fs">
+                                    <h2>Grains</h2>
+                                    <p>Wheat, Flour, Corn Meal, Oats, Rice and Pasta</p>
+                                    <ul>
+                                       <li>Wheat: <span id="wheat"></span></li>
+                                        <li>Rice: <span id="rice"></span></li>
+                                        <li>Flour: <span id="flour"></span></li>
+                                        <li>Oats: <span id="oats"></span></li>
+                                        <li>Pasta: <span id="pasta"></span></li>
+                                        <li>Corn Meal: <span id="corn"></span></li>
+                                    </ul>
+                                </div>
+                                <div class="fs">
+                                    <h2>Grains</h2>
+                                    <p>Wheat, Flour, Corn Meal, Oats, Rice and Pasta</p>
+                                    <ul>
+                                       <li>Wheat: <span id="wheat"></span></li>
+                                        <li>Rice: <span id="rice"></span></li>
+                                        <li>Flour: <span id="flour"></span></li>
+                                        <li>Oats: <span id="oats"></span></li>
+                                        <li>Pasta: <span id="pasta"></span></li>
+                                        <li>Corn Meal: <span id="corn"></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="social-sharing">
+                            <h4>share you result</h4>
+                            <div class="links">
+                                <a href="#" class="tweet fab fa-twitter"></a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=www.pandemicbuying.com" class="fab fa-facebook-f" target="_blank"></a>
+                            </div>
+                        </div>
+                        <a href="#" id="restart" class="btn">Retake it</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right-split">
+                <div class="inner-wrap">
+                    <div class="header white-h"> Select Option Below </div>
+
+                    <img src="/assets/img/hty.svg" class="hooray hidden">
+                    <div class="options q-one">
+                        <div class="q-opt">
+                            <label>A</label> <span>Male</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>b</label> <span>female</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>c</label> <span>prefer not to say</span>
+                        </div>
+                    </div>
+
+                    <!-- Quiz Second -->
+                    <div class="options q-two hidden">
+                        <div class="q-opt">
+                            <label>A</label> <span>Under 18</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>b</label> <span>18-25</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>c</label> <span>26-35</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>d</label> <span>36-45</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>e</label> <span>over 45</span>
+                        </div>
+                    </div>
+
+                    <!-- Quiz Third -->
+                    <div class="options q-three hidden">
+                        <div class="q-opt">
+                            <label>A</label> <span>urban (city) suburban</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>b</label> <span>rural (farm/country)</span>
+                        </div>
+                    </div>
+                    <!-- Quiz Four -->
+                    <div class="options q-four hidden">
+                        <div class="q-opt">
+                            <label>A</label> <span>Very healthy</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>b</label> <span>not healthy</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>c</label> <span>moderately healthy</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>d</label> <span>Very Ill</span>
+                        </div>
+                    </div>
+
+                     <!-- Quiz Five -->
+                     <div class="options q-five hidden">
+                        <input type="text" id="adults" placeholder="Enter number here" required>
+                        <a href="#" class="btn" id="to-six">next</a>
+                    </div>
+
+                     <!-- Quiz Six -->
+                     <div class="options q-six hidden">
+                        <input type="text" id="child" placeholder="Enter number here" required>
+                        <a href="#" class="btn" id="to-seven">next</a>
+                    </div>
+
+                      <!-- Quiz Seven -->
+                      <div class="options q-seven hidden">
+                        <input type="text" id="toilet" placeholder="Enter number here" required>
+                        <a href="#" class="btn" id="to-eight">next</a>
+                    </div>
+
+                      <!-- Quiz Eight -->
+                      <div class="options q-eight hidden">
+                        <input type="text" id="mealseat" placeholder="Enter number here" required>
+                        <a href="#" class="btn" id="to-nine">next</a>
+                    </div>
+
+                      <!-- Quiz Nine -->
+                      <div class="options q-nine hidden">
+                        <input type="text" id="waterdrink" placeholder="Enter number here" required>
+                        <a href="#" class="btn" id="to-ten">next</a>
+                    </div>
+
+                      <!-- Quiz Ten -->
+                      <div class="options q-ten hidden">
+                        <input type="text" id="weeksfood" placeholder="Enter number here" required>
+                        <a href="#" class="btn" id="to-eleven">next</a>
+                    </div>
+
+                      <!-- Quiz Eleven -->
+                      <div class="options q-eleven hidden">
+                        <input type="text" id="weekswater" placeholder="Enter number here" required>
+                        <a href="#" class="btn" id="to-twelve">next</a>
+                    </div>
+
+                      <!-- Quiz Twelve -->
+                      <div class="options q-twelve hidden">
+                        <input type="text" id="weekspaper" placeholder="Enter number here" required>
+                        <a href="#" class="btn" id="to-thirteen">next</a>
+                    </div>
+
+                     <!-- Quiz Thirteen/Last -->
+                     <div class="options q-thirteen hidden">
+                        <div class="q-opt">
+                            <label>A</label> <span>Gun</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>b</label> <span>Knife</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>c</label> <span>crossbow</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>d</label> <span>axe</span>
+                        </div>
+                        <div class="q-opt">
+                            <label>e</label> <span>other</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
