@@ -1,120 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pandemic Buying</title>
-    <link rel="stylesheet" href="/assets/css/index.css">
-</head>
-<body>
-    
-
-    <div id="root">
-        <div class="content">
-            <div class="content-wrapper">
-                <div class="flex-content">
-                <div class="head-wrap">
-                    <h3>Know how  <div class="dash"></div></h3>
-                    <h1>Much stuffs</h1>
-                    <h3>you need to store</h3>
-                    <a href="#" class="btn --trig-est">Get estimate</a>
-                </div>
-                <img src="/assets/img/goods.svg">
-            </div>
-        </div>
-        </div>
-      
-   
-            <div class="app">
-                <div class="material-icons close-est">close</div>
-               <div class="mt"></div>
-                <div class="wrapper">
-                    <h1>Get Estimate</h1>
-                    <p>Always rotate your stored food into your normal diet\nusing up the oldest products first. This will save you a lot of money and prevent waste.</p>
-                </div>
-
-                <div class="divider"></div>
-
-               <div class="wrapper">
-                   <div class="age">
-                       <label class="lg-header">How old are you?</label>
-                       <form action="#">
-                        <p>
-                          <input type="radio" id="test1" name="radio-group" checked>
-                          <label class="header" for="test1">Under 18</label>
-                        </p>
-                        <p>
-                          <input type="radio" id="test2" name="radio-group">
-                          <label class="header" for="test2">18-40</label>
-                        </p>
-                        <p>
-                          <input type="radio" id="test3" name="radio-group">
-                          <label class="header" for="test3">Over 40</label>
-                        </p>
-                      </form>
-                   </div>
-
-                
-                   <div class="inputs">
-                        <label>Enter number of family members here:</label>
-                        <input type="text" placeholder="Number of family members, Ages 7+" id="adults">
-                        <input type="text" placeholder="Number of family members, Ages 0-6" id="children">
-
-                        <label>Number of toilet visits a day</label>
-                        <input type="text" placeholder="How many toilet visits a day in your household" id="toilet">
-
-                        <label>How many meals are eaten? </label>
-                        <input type="text" placeholder="How many meals are eaten in a day in your household?">
-
-                        <label>Bottles of water drunken</label>
-                        <input type="text" placeholder="How many water bottles are drunken in a day in your household?">
-
-                    
-                        <div class="weeks">
-                            <label>Enter the amount of weeks:</label>
-                            <input type="text" placeholder="Number of week’s for food/water supply you wish to store" id="weeks">
-                            <input type="text" placeholder="Number of toilet rolls you wish to store" id="rolls">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css"
+    />
+    <link rel="stylesheet" href="/app.css" />
+    <link rel="stylesheet" href="/vendor.css" />
+  </head>
+  <body>
+    <div
+      data-app="true"
+      class="v-application v-application--is-ltr theme--light"
+      id="app"
+    >
+      <div class="v-application--wrap">
+        <main class="v-content" style="padding: 0px;" data-booted="true">
+          <div class="v-content__wrap">
+            <div class="container">
+              <h1 class="text-center main-title">
+                Is there enough toilet paper?
+              </h1>
+              <div class="row text-center">
+                <div class="col-md-6 col-12">
+                  <div class="row">
+                    <div class="col col-12">
+                      <div class="v-subheader title theme--light">
+                        Number of rolls
+                      </div>
+                      <div class="v-card__text pa-0">
+                        <div class="row">
+                          <div class="pr-4 col">
+                            <div
+                              class="v-input align-center v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-input__slider"
+                            >
+                              <div class="v-input__control">
+                                <div class="v-input__slot">
+                                  <div
+                                    class="v-slider v-slider--horizontal theme--light"
+                                  >
+                                    <input
+                                      value="2"
+                                      id="input-7"
+                                      readonly="readonly"
+                                      tabindex="-1"
+                                    />
+                                    <div class="v-slider__track-container">
+                                      <div
+                                        class="v-slider__track-background primary lighten-3"
+                                        style="right: 0px; width: calc(97.9592%);"
+                                      ></div>
+                                      <div
+                                        class="v-slider__track-fill primary"
+                                        style="left: 0px; right: auto; width: 2.04082%;"
+                                      ></div>
+                                    </div>
+                                    <div
+                                      role="slider"
+                                      tabindex="0"
+                                      aria-valuemin="1"
+                                      aria-valuemax="50"
+                                      aria-valuenow="2"
+                                      aria-readonly="false"
+                                      aria-orientation="horizontal"
+                                      class="v-slider__thumb-container primary--text"
+                                      style="left: 2.04082%;"
+                                    >
+                                      <div
+                                        class="v-slider__thumb primary"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="v-input__append-outer">
+                                <div
+                                  class="v-input mt-0 pt-0 v-input--hide-details v-input--is-label-active v-input--is-dirty v-input--is-disabled theme--light v-text-field v-text-field--single-line v-text-field--is-booted"
+                                  style="width: 60px;"
+                                >
+                                  <div class="v-input__control">
+                                    <div class="v-input__slot">
+                                      <div class="v-text-field__slot">
+                                        <input
+                                          disabled="disabled"
+                                          id="input-8"
+                                          type="number"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                   </div>
-
-                   <a href="#" class="btn btn-red" id="calc">Calculate</a>
-                 </div>
-
-                 <div class="wrapper result">
-
-                    <p id="notee"></p>
-
-                    <div class="rs" id="opt-one"></div>
-                    <div class="rs" id="opt-two"></div>
-                    <div class="rs" id="opt-three"></div>
-                    <div class="rs" id="opt-four"></div>
-                    <div class="rs" id="opt-five"></div>
-                    <div class="rs" id="opt-six"></div>
-                    <div class="rs" id="opt-seven"></div>
-                    <div class="rs" id="opt-eight"></div>
-                    <div class="rs" id="opt-nine"></div>
-
-                    <p id="note"></p>
-
-                    <div class="social-sharing">
-                        <h4>share you result</h4>
-                        <div class="links">
-                            <a href="#" class="tweet fab fa-twitter"></a>
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=www.pandemicbuying.com" class="fab fa-facebook" target="_blank"></a>
-                        </div>
+                      </div>
                     </div>
-                 </div>
+                    <div class="col col-12">
+                      <div class="v-subheader title theme--light">
+                        The number of trips to the toilet
+                      </div>
+                      <div class="v-card__text pa-0">
+                        <div class="row">
+                          <div class="pr-4 col">
+                            <div
+                              class="v-input align-center v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-input__slider"
+                            >
+                              <div class="v-input__control">
+                                <div class="v-input__slot">
+                                  <div
+                                    class="v-slider v-slider--horizontal theme--light"
+                                  >
+                                    <input
+                                      value="4"
+                                      id="input-10"
+                                      readonly="readonly"
+                                      tabindex="-1"
+                                    />
+                                    <div class="v-slider__track-container">
+                                      <div
+                                        class="v-slider__track-background primary lighten-3"
+                                        style="right: 0px; width: calc(66.6667%);"
+                                      ></div>
+                                      <div
+                                        class="v-slider__track-fill primary"
+                                        style="left: 0px; right: auto; width: 33.3333%;"
+                                      ></div>
+                                    </div>
+                                    <div
+                                      role="slider"
+                                      tabindex="0"
+                                      aria-valuemin="1"
+                                      aria-valuemax="10"
+                                      aria-valuenow="4"
+                                      aria-readonly="false"
+                                      aria-orientation="horizontal"
+                                      class="v-slider__thumb-container primary--text"
+                                      style="left: 33.3333%;"
+                                    >
+                                      <div
+                                        class="v-slider__thumb primary"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="v-input__append-outer">
+                                <div
+                                  class="v-input mt-0 pt-0 v-input--hide-details v-input--is-label-active v-input--is-dirty v-input--is-disabled theme--light v-text-field v-text-field--single-line v-text-field--is-booted"
+                                  style="width: 60px;"
+                                >
+                                  <div class="v-input__control">
+                                    <div class="v-input__slot">
+                                      <div class="v-text-field__slot">
+                                        <input
+                                          disabled="disabled"
+                                          id="input-11"
+                                          type="number"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col-12">
+                      <div class="v-subheader title theme--light">
+                        Number of sheets per roll
+                      </div>
+                      <div class="v-card__text pa-0">
+                        <div class="row">
+                          <div class="pr-4 col">
+                            <div
+                              class="v-input align-center v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-input__slider"
+                            >
+                              <div class="v-input__control">
+                                <div class="v-input__slot">
+                                  <div
+                                    class="v-slider v-slider--horizontal theme--light"
+                                  >
+                                    <input
+                                      value="3"
+                                      id="input-13"
+                                      readonly="readonly"
+                                      tabindex="-1"
+                                    />
+                                    <div class="v-slider__track-container">
+                                      <div
+                                        class="v-slider__track-background primary lighten-3"
+                                        style="right: 0px; width: calc(77.7778%);"
+                                      ></div>
+                                      <div
+                                        class="v-slider__track-fill primary"
+                                        style="left: 0px; right: auto; width: 22.2222%;"
+                                      ></div>
+                                    </div>
+                                    <div
+                                      role="slider"
+                                      tabindex="0"
+                                      aria-valuemin="1"
+                                      aria-valuemax="10"
+                                      aria-valuenow="3"
+                                      aria-readonly="false"
+                                      aria-orientation="horizontal"
+                                      class="v-slider__thumb-container primary--text"
+                                      style="left: 22.2222%;"
+                                    >
+                                      <div
+                                        class="v-slider__thumb primary"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="v-input__append-outer">
+                                <div
+                                  class="v-input mt-0 pt-0 v-input--hide-details v-input--is-label-active v-input--is-dirty v-input--is-disabled theme--light v-text-field v-text-field--single-line v-text-field--is-booted"
+                                  style="width: 60px;"
+                                >
+                                  <div class="v-input__control">
+                                    <div class="v-input__slot">
+                                      <div class="v-text-field__slot">
+                                        <input
+                                          disabled="disabled"
+                                          id="input-14"
+                                          type="number"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col-12">
+                      <div class="v-subheader title theme--light">
+                        Quarantine Duration
+                      </div>
+                      <div class="v-card__text pa-0">
+                        <div class="row">
+                          <div class="pr-4 col">
+                            <div
+                              class="v-input align-center v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-input__slider"
+                            >
+                              <div class="v-input__control">
+                                <div class="v-input__slot">
+                                  <div
+                                    class="v-slider v-slider--horizontal theme--light"
+                                  >
+                                    <input
+                                      value="4"
+                                      id="input-16"
+                                      readonly="readonly"
+                                      tabindex="-1"
+                                    />
+                                    <div class="v-slider__track-container">
+                                      <div
+                                        class="v-slider__track-background primary lighten-3"
+                                        style="right: 0px; width: calc(93.8776%);"
+                                      ></div>
+                                      <div
+                                        class="v-slider__track-fill primary"
+                                        style="left: 0px; right: auto; width: 6.12245%;"
+                                      ></div>
+                                    </div>
+                                    <div
+                                      role="slider"
+                                      tabindex="0"
+                                      aria-valuemin="1"
+                                      aria-valuemax="50"
+                                      aria-valuenow="4"
+                                      aria-readonly="false"
+                                      aria-orientation="horizontal"
+                                      class="v-slider__thumb-container primary--text"
+                                      style="left: 6.12245%;"
+                                    >
+                                      <div
+                                        class="v-slider__thumb primary"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="v-input__append-outer">
+                                <div
+                                  class="v-input mt-0 pt-0 value v-input--hide-details v-input--is-label-active v-input--is-dirty v-input--is-disabled theme--light v-text-field v-text-field--single-line v-text-field--is-booted"
+                                  style="width: 60px;"
+                                >
+                                  <div class="v-input__control">
+                                    <div class="v-input__slot">
+                                      <div class="v-text-field__slot">
+                                        <input
+                                          disabled="disabled"
+                                          id="input-17"
+                                          type="number"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-         </div>
+                <div class="primary--text my-auto col-md-6 col-12">
+                  <div class="row">
+                    <div class="col col-12">
+                      <h1>You last live:</h1>
+                      <div class="days">
+                        <span class="number"> 42 </span
+                        ><span class="text"> days</span>
+                      </div>
+                      <p>With toilet paper</p>
+                    </div>
+                    <div class="col col-12">
+                      <p class="highlight">You have enough paper!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
 
-   
-
-
-  
-
-
-
-
-
-</body>
+    <script src="/vendor.js"></script>
+    <script src="/app.js"></script>
+  </body>
 </html>
