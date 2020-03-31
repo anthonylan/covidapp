@@ -3193,16 +3193,7 @@
 }
 
 .v-subheader {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 48px;
-    font-size: .875rem;
-    font-weight: 400;
-    padding: 0 16px 0 16px
+  
 }
 
 .v-subheader--inset {
@@ -8089,13 +8080,14 @@ html.overflow-y-hidden {
 .v-application .align-end {
     -webkit-box-align: end!important;
     -ms-flex-align: end!important;
-    align-items: flex-end!important
+    
 }
+
+
 
 .v-application .align-center {
     -webkit-box-align: center!important;
     -ms-flex-align: center!important;
-    align-items: center!important
 }
 
 .v-application .align-baseline {
@@ -10063,7 +10055,7 @@ html.overflow-y-hidden {
 }
 
 .v-application .text-center {
-    text-align: center!important
+    text-align: left!important
 }
 
 .v-application .text-justify {

@@ -140,7 +140,51 @@ dom.querySelector('#calc').addEventListener('click', (e) => {
     
     calculate();
 })
+//@ Clear Calc
+dom.querySelector('#clear-calc').addEventListener('click', (e) => {
+    e.preventDefault()
+    dom.querySelector('.result').style.display = 'none'
+
+})
     
 
 
 
+//@Bring Food
+dom.querySelectorAll('.--trig-food-calc').forEach((foodCalc) => {
+    foodCalc.addEventListener('click', (e) => {
+        e.preventDefault()
+        TweenMax.to('.wrapper-v', .5, { x: '0%' })
+        TweenMax.to('#root', .5, {x: '130%'})
+
+        dom.querySelector('#take-it').style.display = 'none'
+        dom.querySelector('#bring-it').style.display = 'block'
+    })
+})
+
+
+//@Bring back paper
+dom.querySelectorAll('.--trig-paper-calc').forEach((foodCalc) => {
+    foodCalc.addEventListener('click', (e) => {
+        e.preventDefault()
+        TweenMax.to('.wrapper-v', .5, { x: '-130%' })
+        TweenMax.to('#root', .5, {x: '0%'})
+
+        dom.querySelector('#take-it').style.display = 'block'
+        dom.querySelector('#bring-it').style.display = 'none'
+    })
+})
+
+//@Menu
+
+dom.querySelector('.menu').addEventListener('click', (e) => {
+    e.preventDefault()
+
+    TweenMax.to('.mobile-nav', .2, {y: '0%'})
+})
+
+dom.querySelectorAll('.mobile-nav span, .mobile-nav a').forEach((mobLinks) => {
+    mobLinks.addEventListener('click', () => {
+        TweenMax.to('.mobile-nav', .2, {y: '-100%'})
+    })
+})

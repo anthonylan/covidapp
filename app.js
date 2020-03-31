@@ -110,8 +110,8 @@
                     attrs: {
                         cols: "12"
                     }
-                }, [s("v-subheader", {
-                    staticClass: "title"
+                }, [s("v-subheader-v", {
+                    staticClass: "title-v"
                 }, [t._v("Number of rolls")]), s("v-card-text", {
                     staticClass: "pa-0"
                 }, [s("v-row", [s("v-col", {
@@ -162,8 +162,8 @@
                     attrs: {
                         cols: "12"
                     }
-                }, [s("v-subheader", {
-                    staticClass: "title"
+                }, [s("v-subheader-v", {
+                    staticClass: "title-v"
                 }, [t._v("The number of trips to the toilet")]), s("v-card-text", {
                     staticClass: "pa-0"
                 }, [s("v-row", [s("v-col", {
@@ -214,8 +214,8 @@
                     attrs: {
                         cols: "12"
                     }
-                }, [s("v-subheader", {
-                    staticClass: "title"
+                }, [s("v-subheader-v", {
+                    staticClass: "title-v"
                 }, [t._v("Number of sheets per wipe")]), s("v-card-text", {
                     staticClass: "pa-0"
                 }, [s("v-row", [s("v-col", {
@@ -266,8 +266,8 @@
                     attrs: {
                         cols: "12"
                     }
-                }, [s("v-subheader", {
-                    staticClass: "title"
+                }, [s("v-subheader-v", {
+                    staticClass: "title-v"
                 }, [t._v("Quarantine Duration")]), s("v-card-text", {
                     staticClass: "pa-0"
                 }, [s("v-row", [s("v-col", {
@@ -336,7 +336,7 @@
                     }
                 }, [s("p", [t._v("Not enough toilet paper!")]), s("p", {
                     staticClass: "highlight"
-                }, [t._v(" I advise you to buy more " + t._s(t.suggetion) + " " + t._s(t.rollsText) + "! ")])]) : s("v-col", {
+                }, [t._v(" We advise you to buy more " + t._s(t.suggetion) + " " + t._s(t.rollsText) + "! ")])]) : s("v-col", {
                     attrs: {
                         cols: "12"
                     }

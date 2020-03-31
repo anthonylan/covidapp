@@ -1,12 +1,10 @@
-
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,500,600,700|Overpass:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,500,600,700&display=swap');
 
 
 body, .v-application {
-    font-family: 'Overpass', sans-serif !important;
+    font-family: 'Barlow', sans-serif;
+
 }
-
-
 
 
 .title {
@@ -19,34 +17,34 @@ input {
 }
 
 .v-slider__thumb{
-    cursor: col-resize;
+    cursor: pointer;
 }
 
 h1 {
 
     width: 70%;
     margin: 0 auto;
-    color: #222;
+    color: #0D2451;
 }
 
 .number {
-    font-size: 10em
+    font-size: 4rem;
+    color:#0D2451;
 }
 
 .text,
 p {
-    font-size: 2em
+    font-size: 2em;
+    color: #4A5B7D;
 }
 
 .highlight {
-    color: #666;
-    background-color: #fff;
-    width: 70%;
-    margin: 0 auto;
-    border: 1px solid #dad6da;
-    font-size: 1.5rem;
-    padding: 1rem;
+    color: #4A5B7D;
+    font-size: .8rem;
+    text-align: center;
 }
+
+
 
 .main-title {
     margin-top: 20px;
@@ -54,14 +52,27 @@ p {
 }
 
 .small-tx h3{
-    color: #888;
-    transform: translateX(-9rem);
     font-weight: lighter;
+    text-align: center;
+    color: #0D2451;
+}
+.small-tx .text{
+    color: #0D2451;
+    font-size: 1rem;
+}
+.small-tx .days{
+    text-align: center;
+    color: #0D2451;
+}
+.small-tx .number{
+    font-weight: 700;
+    text-align: center;
+    color: #0D2451;
+}
+.small-tx p{
+    font-size: 1rem;
+    text-align: center;
+    color: #4A5B7D;
 }
 
-@media (max-width:550px){
-    .small-tx h3{
-        transform: translateX(-4rem);
-    }
-}
 
