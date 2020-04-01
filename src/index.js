@@ -127,7 +127,8 @@ function calculate() {
 
 
     dom.querySelector('.result').style.display = 'block'
-   
+    dom.querySelector('.recommend').style.display = 'block'
+
 
    
 }
@@ -144,6 +145,7 @@ dom.querySelector('#calc').addEventListener('click', (e) => {
 dom.querySelector('#clear-calc').addEventListener('click', (e) => {
     e.preventDefault()
     dom.querySelector('.result').style.display = 'none'
+    dom.querySelector('.recommend').style.display = 'none'
 
 })
     

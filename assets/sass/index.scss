@@ -377,3 +377,33 @@ body{
         font-size: 1rem;
     }
 }
+
+
+//@ Recommend list
+.recommend{
+    margin-top: 2rem;
+    box-shadow: 0 0 33px rgba(0,0,0,.1);
+    padding: 2rem 1rem;
+    height: auto;
+    border-radius: 8px;
+    display: none;
+    //border: 1px solid #E0E2E6;
+    h3{
+        color: #1976d2;
+        font-weight: lighter;
+        margin-left: 1.4rem;
+        font-size: 1.3rem;
+    }
+    .list{
+        width: 90%;
+        margin: 1rem auto 0 auto;
+        a{
+            display: block;
+            color: #4A5B7D;
+            font-size: 1rem;
+            border-bottom: 1px solid #E0E2E6;
+            padding: .8rem 0;
+            margin: .5rem 0;
+        }
+    }
+}
