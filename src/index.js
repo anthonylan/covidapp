@@ -125,10 +125,12 @@ function calculate() {
     console.log();
     console.log("NOTE: The amount of water shown is a 1-week or 2-week\nof minimum recommended supply. It is rarely practical\nto store more. We suggest that you store this amount\nand supplement kit with a good water filter or water\npurification kit.\n");
 
-
-    dom.querySelector('.result').style.display = 'block'
-    dom.querySelector('.recommend').style.display = 'block'
-
+    setTimeout(() => {
+        dom.querySelector('.result').style.display = 'block'
+        dom.querySelector('.recommend').style.display = 'block'
+        dom.querySelector('#go-result').style.opacity = '1'
+}, 800)
+    
 
    
 }
@@ -189,4 +191,12 @@ dom.querySelectorAll('.mobile-nav span, .mobile-nav a').forEach((mobLinks) => {
     mobLinks.addEventListener('click', () => {
         TweenMax.to('.mobile-nav', .2, {y: '-100%'})
     })
+})
+
+
+//@Show More
+dom.querySelector('#load-more').addEventListener('click', (e) => {
+    e.preventDefault()
+
+    dom.querySelector('.list').style.height = '100%';
 })
