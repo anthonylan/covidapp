@@ -1,0 +1,49 @@
+The site uses Webpack(https://webpack.js.org/) for the JavaScript bundling and Sass(https://sass-lang.com/) for compiling CSS
+
+The logic for the Toilet paper calculator can be found in the app.js file
+The file src/index.js contains all the site fuctionalities and Food storage logic
+
+/// You don't have to worry about the above if you're not a developer ///
+
+
+##EDITING AFFILIATE LINKS
+For editing the Amazon affilate products which is found at index.html)
+If you go through the HTML page(index.html) you'll see a comment like this:  
+<!--========================== Affiliate Products ============================ -->
+
+Below that lies the affilate links, you can change their text, images and links.
+
+The affiliate links looks like this:
+
+   <a href="https://amzn.to/2x1YAzF" target="_blank">
+       <img src="https://images-na.ssl-images-amazon.com/images/I/91QCnvvW5YL._AC_SL1500_.jpg" alt="">
+       <p>Swiss Safe 2-in-1 First Aid Kit</p>
+  </a>
+
+
+This is how you edit them:
+
+   <a href="<[AFFILIATE LINK GOES HERE]>" target="_blank">
+        <img src="<[PRODUCT IMAGE GOES HERE]>" alt="">
+       <p><[PRODUCT TITLE GOES HERE]></p>
+   </a>
+
+
+ The same thing if you want to add more products, you just have copy the above and replace the link, title and image  
+
+
+
+
+ //// FOR DEVELOPER
+
+Remember the site uses Webpack for the JavaScript and Saas for the CSS. So if you have to make any changes to the index.scss file you'll need a compiler for it to take effect.
+I use Prepros for compiling, but you can use any.
+ For make chan take effect on the index.js file you'll need to run the Webpack command: 'npm run start'
+ that will bundle update the main.js file in the /dist folder.
+
+The file vendor.js and vendor.css are very important for the Toilet paper calculator to work, so do not delete, 
+in short do not delete any file that has a .js, .scss, .css extention, in short do not delete anything lol
+
+ //LOGO
+ The site logo can be found in the folder /assets/img
+ 
