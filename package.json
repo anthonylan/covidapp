@@ -12,6 +12,6 @@
   "dependencies": {
     "gsap": "^3.2.6",
     "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.12"
   }
 }
